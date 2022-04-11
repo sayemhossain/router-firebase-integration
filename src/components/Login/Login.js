@@ -12,8 +12,11 @@ const Login = () => {
         <input type="password" name="" id="" placeholder="Your password" />
         <br></br>
         <br></br>
-        <button>Login</button>
+        <input type="submit" value="Login" />
       </form>
+      <br></br>
+      <button style={{ marginRight: "20px" }}>Google SignIn</button>
+      <button>Github SignIn</button>
       <p>
         Don't have account? <Link to="/register">Register Now</Link>
       </p>

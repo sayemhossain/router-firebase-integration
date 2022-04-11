@@ -15,7 +15,7 @@ const Reviews = () => {
         <input type="password" name="" id="" placeholder="Your password" />
         <br></br>
         <br></br>
-        <button>Register Now</button>
+        <input type="submit" value="Register Now" />
       </form>
       <p>
         Already have account? Go to <Link to="/login">Login</Link> page
