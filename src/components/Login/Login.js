@@ -1,9 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import useFirebase from "../../hooks/useFirebase";
+import { useSignInWithGoogle } from "react-firebase-hooks/auth";
+import { auth } from "../../firebase.init";
 
 const Login = () => {
-  const { signInWithGoogle } = useFirebase();
+  const [signInWithGoogle, user] = useSignInWithGoogle(auth);
   return (
     <div>
       <h4>Please login</h4>
@@ -17,7 +18,10 @@ const Login = () => {
         <input type="submit" value="Login" />
       </form>
       <br></br>
-      <button onClick={signInWithGoogle} style={{ marginRight: "20px" }}>
+      <button
+        onClick={() => signInWithGoogle()}
+        style={{ marginRight: "20px" }}
+      >
         Google SignIn
       </button>
       <button>Github SignIn</button>
