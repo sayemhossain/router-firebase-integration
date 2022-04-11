@@ -1,3 +1,8 @@
+.header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: aquamarine;
+}
 .header nav a {
   margin-right: 20px;
   text-decoration: none;
