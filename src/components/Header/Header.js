@@ -6,6 +6,9 @@ const Header = () => {
     <div className="header">
       <nav>
         <Link to="/">Home</Link>
+        <Link to="/products">Products</Link>
+        <Link to="/Orders">Orders</Link>
+        <Link to="/Reviews">Reviews</Link>
         <Link to="/login">Login</Link>
       </nav>
     </div>
